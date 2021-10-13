@@ -80,7 +80,7 @@ async def alive(_, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        f"""✅ **Woof is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f"""✅ **Bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -98,7 +98,7 @@ async def ping_pong(_, m: Message):
     m_reply = await m.reply_text("pinging...")
     delta_ping = time() - sturt
     await m_reply.edit_text(
-        "🏓 `Woof!!`\n"
+        "🏓 `Pong!!`\n"
         f"⚡️ `{delta_ping * 1000:.3f} ms`"
     )
 
@@ -110,7 +110,7 @@ async def get_uptime(_, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        "🤖 Woof status 🤖\n\n"
+        "🤖 Bot status 🤖\n\n"
         f"• **uptime:** `{uptime}`\n"
         f"• **start time:** `{START_TIME_ISO}`"
     )
