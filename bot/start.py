@@ -83,9 +83,11 @@ async def alive(_, m: Message):
         f"""✅ **Bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
+               [
                     InlineKeyboardButton(
-                        "👩‍💻 Developer", url=f"https://t.me/zxcskyy"
-            ]
+                        "👩‍💻 Developer", url=f"https://t.me/zxcskyy")
+               ]
+            [
         )
     )
 
