@@ -39,7 +39,7 @@
 
 ## 🧪 Get SESSION_NAME from below:
 
-TAP THIS: [![Run on Repl.it](https://repl.it/badge/github/ChankitSaini/GenerateStringSession)](https://replit.com/@ChankitSaini/GenerateStringSession)
+TAP THIS: [![Run on Bot](https://t.me/StringXRobot)](https://t.me/StringXRobot)
 
 ## 💜 Deploy To Heroku
 The easy way to host this bot, deploy to Heroku
