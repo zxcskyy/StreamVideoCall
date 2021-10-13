@@ -1,15 +1,13 @@
 {
-    "name": "Woof Video Strea",
+    "name": "StreamVideoCall",
     "description": "telegram bot for streaming video trought the telegram group video chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/cc150908bbf937477afe8.jpg",
+    "logo": "https://telegra.ph/file/8dfc818ab5f7f45ce786f.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream"
     ],
-    "website": "https://t.me/mailmusicupdate",
-    "repository": "https://github.com/W29F/WoofieVideoStream",
-    "success_url": "https://t.me/hmm3000x",
+    "repository": "https://github.com/zxcskyy/StreamVideoCall",
     "env": {
         "API_ID": {
             "description": "your APP_ID from my.telegram.org",
