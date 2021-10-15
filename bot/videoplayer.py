@@ -74,18 +74,14 @@ def youtube(url: str):
 
 
 @Client.on_message(command(["vplay", f"vplay@{Woof.BOT_USERNAME}"]) & filters.group & ~filters.edited)
-@authorized_users_only
 async def startvideo(client, m: Message):
     
     keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="✨ ɢʀᴏᴜᴘ",
-                        url=f"https://t.me/{Woof.GROUP_NAME}"),
-                    InlineKeyboardButton(
-                        text="🌻 ᴄʜᴀɴɴᴇʟ",
-                        url=f"https://t.me/{Woof.CHANNEL_NAME}")
+                        text="✨ Owner",
+                        url=f"https://t.me/zxcskyy")
                 ]
             ]
         )
@@ -191,7 +187,6 @@ async def startvideo(client, m: Message):
 
 
 @Client.on_message(command(["vstop", f"vstop@{Woof.BOT_USERNAME}"]) & filters.group & ~filters.edited)
-@authorized_users_only
 async def stopvideo(client, m: Message):
     chat_id = m.chat.id
     try:
@@ -216,7 +211,6 @@ async def handler(client: PyTgCalls, update: Update):
 
 
 @Client.on_message(command(["cplay", f"cplay@{Woof.BOT_USERNAME}"]) & filters.group & ~filters.edited)
-@authorized_users_only
 async def chstream(client, m: Message):
     replied = m.reply_to_message
     if not replied:
@@ -311,7 +305,6 @@ async def chstream(client, m: Message):
 
 
 @Client.on_message(command(["cstop", f"cstop@{Woof.BOT_USERNAME}"]) & filters.group & ~filters.edited)
-@authorized_users_only
 async def chstopvideo(client, m: Message):
     chat_id = Woof.CHANNEL
     try:
