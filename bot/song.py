@@ -29,7 +29,7 @@ from helpers.decorators import humanbytes
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("🔎 finding song...")
-    ydl_ops = {"format": "bestaudio[ext=m4a]"}
+    ydl_ops = {"format": "bestaudio"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
