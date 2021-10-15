@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By WoofMusic
+# Copyright (C) 2021 @zxcskyy
 
 from __future__ import unicode_literals
 
@@ -188,7 +188,7 @@ def time_formatter(milliseconds: int) -> str:
 
 
 ydl_opts = {
-    "format": "bestaudio/best",
+    "format": "bestaudio",
     "writethumbnail": True,
     "postprocessors": [
         {
